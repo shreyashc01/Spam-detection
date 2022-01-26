@@ -9,21 +9,22 @@
 	<header>
 		<div class="container">
 		<div id="brandname">
-			ML App
+			Google App Engine Project
 		</div>
 		<h2>Spam Detection For Youtube Comments</h2>
 		
 	</div>
 	</header>
-	<p style="color:blue;font-size:20;text-align: center;"><b>Results for Comment</b></p>
+	<p style="color:blue;font-size:20;text-align: center;"><b>Results for your given comment is...!</b></p>
+	<p>The comment given is: " {{ comment }} "</p>
 	<div class="results">
 
 
 		
 	{% if prediction == 1%}
-	<h2 style="color:red;">Spam</h2>
+	<h2 style="color:red;">It's a Spam</h2>
 	{% elif prediction == 0%}
-	<h2 style="color:blue;">Not a Spam (It is a Ham)</h2>
+	<h2 style="color:blue;">It's Not a Spam</h2>
 	{% endif %}
 
 	</div>
